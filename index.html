@@ -2,7 +2,7 @@
 <html>
     <head></head>
     <style>
-        #yolo {
+        #display {
             width: 100vw;
             height: 100vh;
             background-color: aqua;
@@ -24,10 +24,19 @@
     
     </style>
     <body>
-        <div id = 'yolo'>
-            <button id = 'button'>Cool stuff</button>
-        
+        <div id = 'display'>
+            <button id = "button">Cool stuff</button>
         </div>
+        <script>
+            var mybutton = document.getElementById("button");
+            var mydisplay = document.getElementById('display');
+            
+            mybutton.onclick = function(){
+                mydisplay.style.backgroundColor = "#AAA";
+                mybutton.width = 300;
+                mybutton.height = 100;
+            }
+        </script>
           
      
     
